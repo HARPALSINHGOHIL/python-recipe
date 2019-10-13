@@ -1,4 +1,4 @@
-FROM python:alpine
+FROM python
 MAINTAINER Harpalsinh Gohil
 
 ENV PYTHONUNBUFFERED 1
@@ -10,5 +10,5 @@ RUN mkdir /app
 WORKDIR /app
 COPY ./app /app
 
-RUN adduser -D user
-USER user
+##RUN useradd -D user
+#USER user
